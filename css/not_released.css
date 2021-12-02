@@ -67,7 +67,7 @@ nav {
   transition: all 0.2s ease;
 }
 .logo a{
-  text-decoration: none;
+    text-decoration: none;
 }
 .logo h1:hover {
   letter-spacing: 2px;
@@ -178,146 +178,31 @@ nav {
   cursor: pointer;
 }
 /* main  */
-.mixtape-main {
+.not-main {
   width: 100vw;
-  min-height: calc(100vh - 6rem);
+  height: calc(100vh - 6 rem);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 5rem 1.7rem;
-}
-.mixtape-main h1 {
-  color: var(--secondary_color);
-  font-weight: 100;
-  font-size: 2.5rem;
-  transition: all 0.2s ease;
-}
-.mixtape-main h1:hover {
-  letter-spacing: 6px;
-}
-.timeline-items {
-  max-width: 70rem;
-  margin: auto;
-  position: relative;
-  margin-top: 5rem;
-}
-.timeline-items::before {
-  content: "";
-  background-color: #373737;
-  border-radius: 1rem;
-  width: 0.4rem;
-  height: 100%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.timeline-item {
-  width: 100%;
-  margin-top: 3rem;
-  position: relative;
-}
-.timeline-date {
-  color: #fff;
-  font-size: 1.1rem;
-}
-.timeline-dot {
-  box-shadow: 0px 0px 27px 0px rgba(33, 175, 255, 0.7);
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 50%;
-  background-color: var(--primary_color);
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.timeline-item:nth-child(odd) {
-  padding-right: calc(50% + 1.5rem);
-  text-align: right;
-}
-.timeline-item:nth-child(even) {
-  padding-left: calc(50% + 1.5rem);
-  text-align: left;
-}
-.timeline-card {
-  margin-top: 1rem;
-  border-radius: 1rem;
-  padding: 2rem;
-  background: #373737;
-  transform-style: preserve-3d;
-  transform: perspective(2000px);
-}
-.timeline-item h3 {
-  color: var(--primary_color);
-  font-size: 2rem;
-  transform: translateZ(40px);
-}
-.timeline-item p {
-  margin-top: 1.5rem;
-  color: #fff;
-  transform: translateZ(20px);
-}
-.cta-btn {
-  margin-top: 2rem;
-  transform: translateZ(40px);
-}
-.timeline-card a {
-  color: var(--primary_color);
-  text-decoration: none;
-  background-color: transparent;
-  border: 2px solid var(--primary_color);
-  font-weight: 600;
-  padding: 0.6rem 2.3rem;
-  border-radius: 2rem;
-  font-size: 0.89rem;
-  transition: 0.5s ease;
-}
-.timeline-card a:hover {
-  color: var(--bg_color);
-  background-color: var(--primary_color);
-}
-
-.shiv-spotify{
-  margin-top: 6rem;
-  width: 95vw;
-}
-.shiv-spotify iframe{
-  border-radius: 1rem;
-}
-footer {
-  overflow-x: hidden;
-  width: 100vw;
-  height: 3.5rem;
-  background-color: var(--primary_color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.text-container {
-  user-select: none;
-  width: 90vw;
-  display: grid;
-  place-items: center;
-}
-.text-container p {
-  color: var(--bg_color);
-  font-size: 1.1rem;
   text-align: center;
-  font-weight: 500;
-  transition: all 0.2s ease;
 }
-.text-container p:hover{
-  letter-spacing: 1px;
+.not-main figure img {
+  width: 20rem;
 }
-.text-container a{
-  color: var(--bg_color);
+.texts h1 {
+  color: var(--secondary_color);
+  display: inline-block;
+  font-size: 2rem;
 }
-@media screen and (max-width: 560px){
-  .text-container p {
-    font-size: 85%;
-  }
+.texts p {
+  color: var(--secondary_color);
+  margin-top: 1.1rem;
+  width: 90vw;
 }
-/* RESPONSIVE CODE  */
+.texts p a {
+  color: var(--primary_color);
+}
 @media screen and (max-width: 768px) {
   .logo {
     width: 40%;
@@ -331,31 +216,6 @@ footer {
   .nav-buttons {
     min-width: 40%;
   }
-  .mixtape-main h1 {
-    font-size: 2.2rem;
-  }
-  .timeline-item h3 {
-    font-size: 1.5rem;
-  }
-  .timeline-item p {
-    font-size: 0.9rem;
-  }
-  .timeline-card a {
-    font-size: 0.7rem;
-  }
-}
-@media screen and (max-width: 590px) {
-  .timeline-item:nth-child(odd) {
-    padding-right: 0;
-    text-align: left;
-  }
-  .timeline-item:nth-child(even) {
-    padding-left: 0;
-    text-align: left;
-  }
-  .timeline-items::before {
-    height: 101%;
-  }
 }
 @media screen and (max-width: 471px) {
   .logo {
@@ -367,20 +227,17 @@ footer {
   .nav-buttons a {
     font-size: 0.6rem;
   }
-  .mixtape-main h1 {
-    font-size: 1.8rem;
-  }
-  .timeline-item h3 {
-    font-size: 1.3rem;
-  }
-  .timeline-item p {
-    font-size: 0.89rem;
-  }
-  .timeline-card a {
-    font-size: 0.66rem;
-  }
   .blue-underline::before {
     height: 0.6rem;
+  }
+  .not-main figure img {
+    width: 16rem;
+  }
+  .texts p {
+font-size: 0.9rem;
+  }
+  .texts h1 {
+    font-size: 1.7rem;
   }
 }
 @media screen and (max-width: 361px) {
