@@ -194,7 +194,7 @@ nav {
   transition: all 0.2s ease;
 }
 .mixtape-main h1:hover {
-  letter-spacing: 6px;
+  letter-spacing: 3px;
 }
 .timeline-items {
   max-width: 70rem;

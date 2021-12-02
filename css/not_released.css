@@ -14,11 +14,11 @@
   background: var(--primary_color);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #1392db;
+  background: #c90cb6;
 }
 :root {
   --bg_color: #0e0e0e;
-  --primary_color: #21afff;
+  --primary_color: #f50add;
   --secondary_color: #ffffff;
 }
 body {
@@ -180,7 +180,7 @@ nav {
 /* main  */
 .not-main {
   width: 100vw;
-  height: calc(100vh - 6 rem);
+  height: calc(100vh - 6rem);
   display: flex;
   justify-content: center;
   align-items: center;
